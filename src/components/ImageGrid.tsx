@@ -21,7 +21,10 @@ const ImageContainer = styled.div`
 const ImageDiv = styled.div`
   min-width: 180px;
   width: 220px;
+  max-width: 250px;
+  min-height: 180px;
   height: 200px;
+  max-height: 250px;
   flex: 1;
   padding: 0.5rem;
 `;

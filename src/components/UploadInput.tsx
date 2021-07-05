@@ -34,6 +34,15 @@ const Upload = styled.input`
   opacity: 0;
 `;
 
+const UploadButton = styled(Button)`
+  background-color: #512498;
+  border-color: #8f55d9;
+  &:hover, &:focus {
+    background-color: #8f55d9;
+    border-color: #d4b0f8;
+  }
+`;
+
 const UploadInput: React.FC = () => {
   const types = ["image/png", "image/jpeg", "image/gif"];
   const [file, setFile] = useState<any>(null);
@@ -59,14 +68,14 @@ const UploadInput: React.FC = () => {
     <Container>
 
       <Upload ref={hiddenFileInput} type={"file"} onChange={OnFileChange} />
-      <Button 
+      <UploadButton 
         type={"primary"}
         size={"large"}
         icon={<UploadOutlined />} 
         onClick={() => (hiddenFileInput.current as any).click()}
       >
         Click to Upload
-      </Button>
+      </UploadButton>
       
       <Gap height={"1rem"} />
       

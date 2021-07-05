@@ -27,8 +27,8 @@ const ProgressBar: React.FC<IProps> = ({ file, setFile }) => {
     <BarContainer>
       <Progress
         strokeColor={{
-          from: '#108ee9',
-          to: '#87d068',
+          from: "#6a2dc2",
+          to: "#EBDAFA",
         }}
         percent={progress}
         status="active"

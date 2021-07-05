@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Heading = styled.h1`
-  margin-top: 2rem;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
+  color: #ebdafa;
 `;
 
 const Title: React.FC = () => {
